@@ -1,59 +1,90 @@
-
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
 }
-
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #ea580c;
+}
 html {
-    scroll-behavior: smooth;
+  font-size: 60%;
+  overflow-x: hidden;
 }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: #f8fafc;
-    line-height: 1.6;
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
 }
-
-nav {
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 20px 8%;
-    background: #1e293b;
+    z-index: 1000;
 }
-
-nav h2 {
-    margin-right: auto;
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
 }
-
-a {
-    color: #38bdf8;
-    text-decoration: none;
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
-
-a:hover {
-    text-decoration: underline;
+.logo:hover{
+    transform: scale(1.1);
 }
-
-section {
-    padding: 70px 8%;
+span{
+    background: linear-gradient(
+        270deg,
+        #DF8908 10%,
+        #ff1d15 100%
+    );
+    background-clip: text;
+    color: transparent;
 }
-
-#home {
-    min-height: 55vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
 }
-
-h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
+.gradient-btn{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #DF8908 10%,
+        #ff1d15 100%
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+}
+.gradient-btn:hover{
+    transform: scale(1.05);
 }
