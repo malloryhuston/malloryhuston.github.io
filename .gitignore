@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# macOS metadata files in any directory
+**/.DS_Store
+
+# VS Code local settings
+.vscode/
+
+# Python cache files (if using Python later)
+__pycache__/
+*.pyc
+
+# Node.js dependencies (if using npm later)
+node_modules/
+
+# Environment files containing secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.log
+*.tmp
