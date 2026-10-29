@@ -183,8 +183,3 @@ section{
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-
-/* TEMPORARY TEST: Check if CSS is loading */
-body {
-    background-color: red !important;
-}
